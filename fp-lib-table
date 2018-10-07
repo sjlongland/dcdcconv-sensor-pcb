@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name currentshunt)(type KiCad)(uri ${KIPRJMOD}/currentshunt.pretty)(options "")(descr ""))
+  (lib (name combicon)(type KiCad)(uri ${KIPRJMOD}/combicon.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ina219)(type Legacy)(uri ${KIPRJMOD}/ina219.lib)(options "")(descr ""))
+  (lib (name PCA9615)(type Legacy)(uri ${KIPRJMOD}/PCA9615.lib)(options "")(descr ""))
+)
