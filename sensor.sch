@@ -185,84 +185,9 @@ Text Label 7600 3700 0    50   ~ 0
 SDA
 Text Label 7600 3800 0    50   ~ 0
 SCL
-$Comp
-L Device:R_Shunt R11
-U 1 1 5BB224A7
-P 9750 3650
-F 0 "R11" H 9663 3696 50  0000 R CNN
-F 1 "R_Shunt" H 9663 3605 50  0000 R CNN
-F 2 "currentshunt:currentshunt" V 9680 3650 50  0001 C CNN
-F 3 "~" H 9750 3650 50  0001 C CNN
-	1    9750 3650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5BB226C2
-P 9050 3600
-F 0 "J2" H 9129 3592 50  0000 L CNN
-F 1 "EXT_SHUNT" H 8850 3400 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9050 3600 50  0001 C CNN
-F 3 "~" H 9050 3600 50  0001 C CNN
-	1    9050 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9600 3750 8800 3750
-Wire Wire Line
-	8850 3700 8800 3700
-Wire Wire Line
-	8800 3700 8800 3750
-Connection ~ 8800 3750
-Wire Wire Line
-	8800 3750 8750 3750
-Wire Wire Line
-	9600 3550 8800 3550
-Wire Wire Line
-	8850 3600 8800 3600
-Wire Wire Line
-	8800 3600 8800 3550
-Connection ~ 8800 3550
-Wire Wire Line
-	8800 3550 8750 3550
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 5BB252D6
-P 9750 3000
-F 0 "J3" V 9716 2812 50  0000 R CNN
-F 1 "DC_IN" V 9625 2812 50  0000 R CNN
-F 2 "combicon:Phoenix_COMBICON_1706785" H 9750 3000 50  0001 C CNN
-F 3 "~" H 9750 3000 50  0001 C CNN
-	1    9750 3000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J4
-U 1 1 5BB25375
-P 9850 4300
-F 0 "J4" V 9723 4112 50  0000 R CNN
-F 1 "DC_OUT" V 9814 4112 50  0000 R CNN
-F 2 "combicon:Phoenix_COMBICON_1706785" H 9850 4300 50  0001 C CNN
-F 3 "~" H 9850 4300 50  0001 C CNN
-	1    9850 4300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9750 3850 9750 4100
-Wire Wire Line
-	9750 3450 9750 3200
-Wire Wire Line
-	9850 3200 9850 3650
-Wire Wire Line
-	8250 4800 10300 4800
-Wire Wire Line
-	10300 4800 10300 3650
-Wire Wire Line
-	10300 3650 9850 3650
+	8250 4800 9100 4800
 Connection ~ 8250 4800
-Connection ~ 9850 3650
-Wire Wire Line
-	9850 3650 9850 4100
 $Comp
 L power:VCC #PWR01
 U 1 1 5BB28B0D
@@ -599,14 +524,6 @@ Wire Wire Line
 Connection ~ 7500 4800
 Wire Wire Line
 	7500 4800 6650 4800
-Text Label 9250 3550 0    50   ~ 0
-SHUNT+
-Text Label 9250 3750 0    50   ~ 0
-SHUNT-
-Text Label 9750 3400 1    50   ~ 0
-IN
-Text Label 9750 4050 1    50   ~ 0
-OUT
 $Comp
 L power:GND #PWR03
 U 1 1 5BC15841
@@ -781,4 +698,40 @@ Wire Wire Line
 Connection ~ 5050 3800
 Wire Wire Line
 	5050 3800 5450 3800
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5BC23C12
+P 9400 3600
+F 0 "J2" H 9480 3592 50  0000 L CNN
+F 1 "Conn_01x04" H 9480 3501 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9400 3600 50  0001 C CNN
+F 3 "~" H 9400 3600 50  0001 C CNN
+	1    9400 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 3800 9100 3800
+Wire Wire Line
+	9100 3800 9100 4800
+Wire Wire Line
+	9200 3500 9100 3500
+Wire Wire Line
+	9100 3500 9100 3800
+Connection ~ 9100 3800
+Wire Wire Line
+	8750 3750 8850 3750
+Wire Wire Line
+	8850 3750 8850 3700
+Wire Wire Line
+	8850 3700 9200 3700
+Wire Wire Line
+	8750 3550 8850 3550
+Wire Wire Line
+	8850 3550 8850 3600
+Wire Wire Line
+	8850 3600 9200 3600
+Text Label 8750 3550 0    50   ~ 0
+SHUNT+
+Text Label 8750 3750 0    50   ~ 0
+SHUNT-
 $EndSCHEMATC
