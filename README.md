@@ -1,10 +1,18 @@
+[Find this project on codeberg](https://codeberg.org/sjlongland/dcdcconv-sensor-pcb)
+
+As a result of Github's decision to force AI-generated issues with no opt-out,
+I am migrating personal projects of mine to Codeberg.  The project at Github
+will be archived.
+
+----
+
 # Voltage/Current sensor board
 
 This is a differential I²C voltage and current sensing board using the TI
 INA219 power monitor IC and the NXP PCA9615 differential I²C controller.  This
 is intended to provide a high-accuracy voltage and current measurement for the
 [DC-DC converter
-controller](https://github.com/sjlongland/dcdcconv-controller-pcb).
+controller](https://codeberg.org/sjlongland/dcdcconv-controller-pcb).
 
 There is a footprint for an on-board current shunt (e.g. TT Electronics
 LRMAP5930B-R0002FT) as well as a connector for an off-board one.  The board
